@@ -13,21 +13,21 @@
   <nav class="navbar">
     <ul class="navbar-categories">
       <li>
-        <a href="/">Home</a>
-        <a href="/">Recipes</a>
-        <a href="/">About</a>
-        <a href="/">Account</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#resources">Resources</a>
       </li>
     </ul>
   </nav>
 </div>
 
-<div class="home-heading">
+<div id="home">
   <h1>Like My Mama Made It</h1>
 </div>
 
 <div>
-  <img src="http://placehold.it/" alt="bakery food" />
+  <img class="heading-image" src="./images/heading.jpg" alt="tacos" />
 </div>
 
 <div>
@@ -35,12 +35,24 @@
 </div>
 
 <!-- Second Page -->
+<div id="about">
+  <nav class="navbar">
+    <ul class="navbar-categories">
+      <li>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#resources">Resources</a>
+      </li>
+    </ul>
+  </nav>
+</div>
 <div>
   <h1>About</h1>
 </div>
 
 <div class="my-mama">
-  <img src="http://placehold.it" />
+  <img class="salsa" src="./images/salsa.jpg" />
   <h2>My Mama</h2>
   <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aut, ut aliquid
@@ -50,7 +62,7 @@
 </div>
 
 <div class="her-cooking">
-  <img src="http://placehold.it" />
+  <img class="chorizo" src="./images/chorizo.jpg" />
   <h2>Her Cooking</h2>
   <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aut, ut aliquid
@@ -60,7 +72,7 @@
 </div>
 
 <div class="new-memories">
-  <img src="http://placehold.it" />
+  <img class="pan-dulce" src="./images/pan-dulce.jpg" />
   <h2>New Memories</h2>
   <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aut, ut aliquid
@@ -70,6 +82,19 @@
 </div>
 
 <!-- Third Page -->
+<div>
+  <nav class="navbar">
+    <ul class="navbar-categories">
+      <li>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#resources">Resources</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
 <div>
   <form action="/action_page.php">
     <label for="img">Add Image</label>
@@ -88,10 +113,105 @@
         <input type="text" name="recipe_description" id="recipe-description" />
       </div>
 
-      <div>
-        <label for="vegan">Vegan</label>
-        <input type="checkbox" name="vegan" id="vegan" />
+      <div class="checkbox-inputs">
+        <label for="moms">Mom's</label>
+        <input type="checkbox" name="moms" id="moms" />
+        <label for="dads">Dad's</label>
+        <input type="checkbox" name="dads" id="dads" />
+        <label for="mine">Mine</label>
+        <input type="checkbox" name="mine" id="mine" />
+      </div>
+
+      <div class="ingredients">
+        <label for="ingredients">Ingredients & Instructions</label>
+        <textarea name="ingredients" id="ingredients"></textarea>
+      </div>
+
+      <div class="create-new">
+        <button type="submit">Create</button>
       </div>
     </fieldset>
   </form>
+</div>
+
+<!-- Fourth Page -->
+<div id="recipes">
+  <nav class="navbar">
+    <ul class="navbar-categories">
+      <li>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#resources">Resources</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<div class="recipe-page">
+  <h1>Recipes</h1>
+</div>
+
+<div class="recipe-cards">
+  <a href="http://">
+    <img class="recipe-images" src="./images/lava-cake.jpg" />
+  </a>
+  <a href="http://">
+    <img class="recipe-images" src="./images/smoothie-bowl.jpg" />
+  </a>
+  <a href="http://">
+    <img class="recipe-images" src="./images/tacos.jpg" />
+  </a>
+  <a href="http://">
+    <img class="recipe-images" src="./images/eggs.jpg" />
+  </a>
+  <a href="http://">
+    <img class="recipe-images" src="./images/food.jpg" />
+  </a>
+  <a href="http://">
+    <img class="recipe-images" src="./images/roast.jpg" />
+  </a>
+</div>
+
+<!-- Fifth Page -->
+<div id="resources">
+  <nav class="navbar">
+    <ul class="navbar-categories">
+      <li>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#resources">Resources</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<div>
+  <h1>See You Soon</h1>
+</div>
+
+<div class="fifth-page">
+  <img class="board-image" src="./images/board.jpg" />
+</div>
+
+<div>
+  <h2>Resources</h2>
+  <ul class="resources">
+    <li>
+      <a href="/">Youtube</a>
+    </li>
+    <li>
+      <a href="/">Twitter</a>
+    </li>
+    <li>
+      <a href="/">Instagram</a>
+    </li>
+    <li>
+      <a href="/">Github</a>
+    </li>
+    <li>
+      <a href="/">Facebook</a>
+    </li>
+  </ul>
 </div>
