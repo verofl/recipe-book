@@ -3,7 +3,95 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Sign-In</title>
   </head>
   <body></body>
 </html>
+
+<div>
+  <nav class="navbar">
+    <ul class="navbar-categories">
+      <li>
+        <a href="/">Home</a>
+        <a href="/">Recipes</a>
+        <a href="/">About</a>
+        <a href="/">Account</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<div class="home-heading">
+  <h1>Like My Mama Made It</h1>
+</div>
+
+<div>
+  <img src="http://placehold.it/" alt="bakery food" />
+</div>
+
+<div>
+  <button type="submit" id="new-recipe">New Recipe</button>
+</div>
+
+<!-- Second Page -->
+<div>
+  <h1>About</h1>
+</div>
+
+<div class="my-mama">
+  <img src="http://placehold.it" />
+  <h2>My Mama</h2>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aut, ut aliquid
+    neque aperiam minus deleniti voluptatibus, hic atque ab ipsum itaque rerum
+    accusamus temporibus quaerat, et suscipit omnis illum?
+  </p>
+</div>
+
+<div class="her-cooking">
+  <img src="http://placehold.it" />
+  <h2>Her Cooking</h2>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aut, ut aliquid
+    neque aperiam minus deleniti voluptatibus, hic atque ab ipsum itaque rerum
+    accusamus temporibus quaerat, et suscipit omnis illum?
+  </p>
+</div>
+
+<div class="new-memories">
+  <img src="http://placehold.it" />
+  <h2>New Memories</h2>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aut, ut aliquid
+    neque aperiam minus deleniti voluptatibus, hic atque ab ipsum itaque rerum
+    accusamus temporibus quaerat, et suscipit omnis illum?
+  </p>
+</div>
+
+<!-- Third Page -->
+<div>
+  <form action="/action_page.php">
+    <label for="img">Add Image</label>
+    <input type="file" type="img" name="img" accept="image/*" />
+    <input type="submit" />
+  </form>
+</div>
+
+<div>
+  <form action="/recipe" method="post">
+    <fieldset>
+      <div>
+        <label for="recipe-name">Recipe Name</label>
+        <input type="text" name="recipe_name" id="recipe-name" />
+        <label for="recipe-description">Description</label>
+        <input type="text" name="recipe_description" id="recipe-description" />
+      </div>
+
+      <div>
+        <label for="vegan">Vegan</label>
+        <input type="checkbox" name="vegan" id="vegan" />
+      </div>
+    </fieldset>
+  </form>
+</div>
