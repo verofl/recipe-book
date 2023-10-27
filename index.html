@@ -4,39 +4,224 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Eva Recipes</title>
+    <title>Sign-In</title>
   </head>
-  <body>
-    <nav>
-      <!-- <a href="">Home</a> -->
-      <a href="">Breakfast</a>
-      <a href="">Lunch</a>
-      <a href="">Dinner</a>
-    </nav>
-    <h1>Evalicious Recipes</h1>
-    <div>
-      <h2>Welcome to Eva's Kitchen</h2>
-      <p>Explore a world of delicious recipes and culinary inspiration.</p>
-    </div>
-    <div>
-      <h2>Featured Breakfast Recipes</h2>
-      <ul>
-        <li>Scrambled Eggs with Spinach</li>
-        <li>Blueberry Pancakes</li>
-        <li>Avocado Toast</li>
-      </ul>
-    </div>
-    <div>
-      <h2>Featured Dinner Recipes</h2>
-      <img
-        src="https://www.firstdayofhome.com/wp-content/uploads/2021/05/Chicken-Mole-Recipe-featureimg.jpg"
-        alt="mole mexican food"
-      />
-      <ul>
-        <li>Grilled Salmon with Lemon Butter</li>
-        <li>Pasta Primavera</li>
-        <li>Steak with Garlic Butter</li>
-      </ul>
-    </div>
-  </body>
+  <body></body>
 </html>
+
+<div class="home-page" id="home">
+  <!-- <div>
+    <nav class="navbar">
+      <ul class="navbar-categories">
+        <li>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#create">Create</a>
+          <a href="#recipes">Recipes</a>
+          <a href="#resources">Resources</a>
+        </li>
+      </ul>
+    </nav>
+  </div> -->
+
+  <div class="hero-text">
+    <h1 class="mama-header">Like My Mama Made It</h1>
+    <form action="#create">
+      <button class="header-button" type="submit" id="new-recipe">
+        New Recipe
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- Second Page -->
+<div id="about">
+  <div>
+    <nav class="navbar">
+      <ul class="navbar-categories">
+        <li>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#create">Create</a>
+          <a href="#recipes">Recipes</a>
+          <a href="#resources">Resources</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="about-text">
+    <div class="her-cooking">
+      <h2>Her Cooking</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aut, ut
+        aliquid neque aperiam minus deleniti voluptatibus, hic atque ab ipsum
+        itaque rerum accusamus temporibus quaerat, et suscipit omnis illum?
+      </p>
+      <img class="salsa" src="./images/salsa.jpg" />
+    </div>
+
+    <div class="my-mama">
+      <img class="chorizo" src="./images/chorizo.jpg" />
+      <h1>My Mama</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aut, ut
+        aliquid neque aperiam minus deleniti voluptatibus, hic atque ab ipsum
+        itaque rerum accusamus temporibus quaerat, et suscipit omnis illum?
+      </p>
+    </div>
+
+    <div class="new-memories">
+      <h2>New Memories</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aut, ut
+        aliquid neque aperiam minus deleniti voluptatibus, hic atque ab ipsum
+        itaque rerum accusamus temporibus quaerat, et suscipit omnis illum?
+      </p>
+      <img class="pan-dulce" src="./images/pan-dulce.jpg" />
+    </div>
+  </div>
+</div>
+
+<!-- Third Page -->
+<div id="create" class="create-recipe">
+  <div>
+    <nav class="navbar">
+      <ul class="navbar-categories">
+        <li>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#create">Create</a>
+          <a href="#recipes">Recipes</a>
+          <a href="#resources">Resources</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="add-img">
+    <label for="img">Add Image</label>
+    <input type="file" type="img" name="img" accept="image/*" />
+    <input type="submit" />
+  </div>
+
+  <div>
+    <form action="/recipe" method="post">
+      <fieldset>
+        <div>
+          <label for="recipe-name">Recipe Name</label>
+          <input type="text" name="recipe_name" id="recipe-name" />
+          <label for="recipe-description">Description</label>
+          <input
+            type="text"
+            name="recipe_description"
+            id="recipe-description"
+          />
+        </div>
+
+        <div class="checkbox-inputs">
+          <label for="moms">Mom's</label>
+          <input type="checkbox" name="moms" id="moms" />
+          <label for="dads">Dad's</label>
+          <input type="checkbox" name="dads" id="dads" />
+          <label for="mine">Mine</label>
+          <input type="checkbox" name="mine" id="mine" />
+        </div>
+
+        <div class="ingredients">
+          <label for="ingredients">Ingredients & Instructions</label>
+          <textarea name="ingredients" id="ingredients"></textarea>
+        </div>
+
+        <div class="create-new">
+          <button type="submit">Create</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>
+
+<!-- Fourth Page -->
+<div id="recipes" class="all-recipes">
+  <div>
+    <nav class="navbar">
+      <ul class="navbar-categories">
+        <li>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#create">Create</a>
+          <a href="#recipes">Recipes</a>
+          <a href="#resources">Resources</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="recipe-page">
+    <h1>Recipes</h1>
+  </div>
+
+  <div class="recipe-cards">
+    <a href="http://">
+      <img class="recipe-images" src="./images/lava-cake.jpg" />
+    </a>
+    <a href="http://">
+      <img class="recipe-images" src="./images/smoothie-bowl.jpg" />
+    </a>
+    <a href="http://">
+      <img class="recipe-images" src="./images/tacos.jpg" />
+    </a>
+    <a href="http://">
+      <img class="recipe-images" src="./images/eggs.jpg" />
+    </a>
+    <a href="http://">
+      <img class="recipe-images" src="./images/food.jpg" />
+    </a>
+    <a href="http://">
+      <img class="recipe-images" src="./images/roast.jpg" />
+    </a>
+  </div>
+</div>
+
+<!-- Fifth Page -->
+<div id="resources" class="links">
+  <div class="content-column">
+      <nav class="navbar">
+          <ul class="navbar-categories">
+              <li>
+                  <a href="#home">Home</a>
+                  <a href="#about">About</a>
+                  <a href="#create">Create</a>
+                  <a href="#recipes">Recipes</a>
+                  <a href="#resources">Resources</a>
+              </li>
+          </ul>
+      </nav>
+
+      <div class="fifth-page">
+        <img class="board-image" src="./images/board.jpg" alt="Board Image">
+      </div>
+    </div>
+
+    <div class="resources-column">
+          <h1>See You Soon</h1>
+      <h2>Resources</h2>
+      <ul class="resource-links">
+          <li>
+              <a href="/">Youtube</a>
+          </li>
+          <li>
+              <a href="/">Twitter</a>
+          </li>
+          <li>
+              <a href="/">Instagram</a>
+          </li>
+          <li>
+              <a href="/">Github</a>
+          </li>
+          <li>
+              <a href="/">Facebook</a>
+          </li>
+      </ul>
+  </div>
+</div>
+</body>
